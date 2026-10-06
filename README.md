@@ -5,8 +5,8 @@ Basics of programming assignment 5
 
 Fill here:
 
-- Name
-- Group
+- Name- wasantha wanniarachchi
+- Group- group B 
 
 ## Description of the project
 
