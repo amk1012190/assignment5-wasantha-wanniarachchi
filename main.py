@@ -61,14 +61,12 @@ def turn_around():
 
 sleep(2)
 
-move_forward()
-turn_right()
-move_forward()
-turn_right()
-move_forward()
-turn_left()
-move_forward()
-turn_left()
-move_forward()
-turn_around()
-reverse()
+with open('route.txt', 'r') as file:
+       for line in file:
+           cmd = line.strip().split()[0]
+           if cmd == 'FORWARD':
+               move_forward()
+           elif cmd == 'RIGHT':
+               turn_right()
+           elif cmd == 'LEFT':
+               turn_left()
